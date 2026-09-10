@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติ Nova Team</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Language Switcher Bar -->
+        <div class="lang-switch">
+            <button id="btn-th" class="lang-btn active" onclick="switchLang('th')">TH</button>
+            <span class="divider">|</span>
+            <button id="btn-en" class="lang-btn" onclick="switchLang('en')">EN</button>
+        </div>
+
+        <!-- Header Section -->
+        <header>
+            <div class="badge" id="txt-studio-badge">ROBLOX GAME DEV STUDIO</div>
+            <h1>NOVA TEAM</h1>
+            <p class="subtitle" id="txt-subtitle">ทีมพัฒนาเกมบน Roblox สัญชาติไทย (ก่อตั้ง 29 ก.ค. 2569)</p>
+            <hr>
+            <p class="desc" id="txt-desc">มุ่งมั่นสร้างสรรค์เกมเล่นฟรี (Free-to-Play) บนแพลตฟอร์ม Roblox ให้เข้าถึงผู้เล่นวงกว้าง ต่อยอดความสนุกอย่างต่อเนื่อง และสร้างรายได้ยั่งยืนผ่าน Gamepass / Dev Products 👥</p>
+        </header>
+
+        <!-- Team Members Section -->
+        <section class="card">
+            <h2 id="txt-members-title">โครงสร้างสมาชิกในทีม (คลิกดู Skill)</h2>
+            <div class="team-grid">
+                
+                <div class="member-card" onclick="toggleSkill('skill-1')">
+                    <div class="member-header">
+                        <span class="role-badge leader" id="tag-role-1">Leader & Scripter</span>
+                        <h3 id="name-1">เติ๊ด</h3>
+                    </div>
+                    <p class="role-desc"><strong id="txt-role-label-1">หน้าที่:</strong> Programmer & Direction</p>
+                    <p class="sub-text" id="txt-member-1-desc">เขียนสคริปต์ระบบหลักของเกมและควบคุมทิศทางทีม</p>
+                    <div id="skill-1" class="skill-box hidden">
+                        <p>💻 <b>Specialty:</b> Luau Scripting, Game Systems, DataStore</p>
+                    </div>
+                </div>
+
+                <div class="member-card" onclick="toggleSkill('skill-2')">
+                    <div class="member-header">
+                        <span class="role-badge anim" id="tag-role-2">Animator</span>
+                        <h3 id="name-2">ทัน</h3>
+                    </div>
+                    <p class="role-desc"><strong id="txt-role-label-2">หน้าที่:</strong> Animation</p>
+                    <p class="sub-text" id="txt-member-2-desc">ทำท่าทางและภาพเคลื่อนไหวของตัวละคร/มอนสเตอร์</p>
+                    <div id="skill-2" class="skill-box hidden">
+                        <p>🎬 <b>Specialty:</b> Moon Animator, Rigging, Combat Motion</p>
+                    </div>
+                </div>
+
+                <div class="member-card" onclick="toggleSkill('skill-3')">
+                    <div class="member-header">
+                        <span class="role-badge model" id="tag-role-3">3D Modeler</span>
+                        <h3 id="name-3">เบน</h3>
+                    </div>
+                    <p class="role-desc"><strong id="txt-role-label-3">หน้าที่:</strong> 3D Model</p>
+                    <p class="sub-text" id="txt-member-3-desc">ออกแบบและขึ้นรูปสิ่งของ/ฉากสามมิติลง Roblox</p>
+                    <div id="skill-3" class="skill-box hidden">
+                        <p>🧊 <b>Specialty:</b> Blender, Low-poly Assets, Map Building</p>
+                    </div>
+                </div>
+
+                <div class="member-card" onclick="toggleSkill('skill-4')">
+                    <div class="member-header">
+                        <span class="role-badge art" id="tag-role-4">UI / Artist</span>
+                        <h3 id="name-4">แก้ว 🎯</h3>
+                    </div>
+                    <p class="role-desc"><strong id="txt-role-label-4">หน้าที่:</strong> Artist / Illustrator</p>
+                    <p class="sub-text" id="txt-member-4-desc">วาดภาพประกอบ ไอคอนเกม และออกแบบหน้าตา UI</p>
+                    <div id="skill-4" class="skill-box hidden">
+                        <p>🎨 <b>Specialty:</b> UI/UX Design, Game Icon, Thumbnails</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Archived Concept Section -->
+        <section class="card archived-card">
+            <div class="archive-tag" id="txt-archive-badge">CANCELED CONCEPT</div>
+            <h2 id="txt-archive-title">โปรเจกต์เดิม: Grow & Guard 🌾🐮</h2>
+            <p class="concept-intro" id="txt-archive-intro">แนวคิดเกมปลูกผัก-ขายผลผลิตรูปแบบใหม่ที่มีระบบนิเวศสมจริง แต่ต้องยกเลิกไปเพราะโดนผู้พัฒนาอื่นเปิดตัวเกมแนวเดียวกันตัดหน้าไปก่อน!</p>
+            
+            <div class="concept-features">
+                <div class="feature-item">
+                    <h4 id="txt-feat-1-title">🌱 สายพานเมล็ดพันธุ์กลางแมพ</h4>
+                    <p id="txt-feat-1-desc">ต้องแย่งชิงเมล็ดพันธุ์จากสายพานกลางเมืองเอามาปลูกที่สวน และคอยระวังเพื่อนบ้านแอบขโมยผักหรือโดนแมลงกินจนราคาตก!</p>
+                </div>
+                <div class="feature-item">
+                    <h4 id="txt-feat-2-title">💧 ระบบปลูกและเน่าเสียสมจริง</h4>
+                    <p id="txt-feat-2-desc">ผักโตไวกว่าผลไม้ ต้องคอยรดน้ำใส่ปุ๋ย ถ้าปล่อยเน่าจะตายแล้วดรอปเมล็ดให้เก็บไปปลูกใหม่แบบโลกจริง</p>
+                </div>
+                <div class="feature-item">
+                    <h4 id="txt-feat-3-title">🐔 ปศุสัตว์ & ตลาดค้าขาย</h4>
+                    <p id="txt-feat-3-desc">เลี้ยงไก่เก็บไข่ทำปุ๋ย มีโหมดแปรรูปพืชกลายพันธุ์ และมีแมพโซนค้าขายพิเศษที่ตั้งราคาขายเองได้ตั้งแต่ 0-infinity</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chat History Section -->
+        <section class="card">
+            <h2 id="txt-chat-title">บันทึกการประชุมดราม่าเปลี่ยนแนวเกม 💬</h2>
+            <p class="sub-text" style="margin-bottom: 15px;" id="txt-chat-sub">จุดเปลี่ยนสำคัญเมื่อพบว่ามีคนทำโปรเจกต์แนว Grow & Guard ปล่อยเล่นแล้ว จึงเกิดการประชุมด่วน:</p>
+            
+            <div class="chat-logs">
+                <div class="chat-item">
+                    <span class="chat-user" id="c-user-1">เติ๊ด</span>
+                    <span class="chat-time">28/8/2569 9:41 PM</span>
+                    <p class="chat-msg text-red" id="c-msg-1">"เปลี่ยนๆ เอาไม่เอา"</p>
+                </div>
+                <div class="chat-item">
+                    <span class="chat-user" id="c-user-2">เบน</span>
+                    <span class="chat-time">30/8/2569 10:35 AM</span>
+                    <p class="chat-msg" id="c-msg-2">"เอา"</p>
+                </div>
+                <div class="chat-item highlight-idea">
+                    <span class="chat-user" id="c-user-3">ทัน</span>
+                    <span class="chat-time">2/9/2569 5:12 PM</span>
+                    <p class="chat-msg text-green" id="c-msg-3">"เกมรวมร่างสัตว์เอาไปต่อสู้กัน จะมีส่วนหัวส่วนตัวส่วนขา"</p>
+                </div>
+                <div class="chat-item">
+                    <span class="chat-user" id="c-user-4">เติ๊ด</span>
+                    <span class="chat-time">2/9/2569 5:14 PM</span>
+                    <p class="chat-msg" id="c-msg-4">"Bh code ai 70%"</p>
+                </div>
+                <div class="chat-item">
+                    <span class="chat-user" id="c-user-5">แก้ว</span>
+                    <span class="chat-time">2/9/2569 5:14 PM</span>
+                    <p class="chat-msg" id="c-msg-5">"human"</p>
+                </div>
+                <div class="chat-item">
+                    <span class="chat-user" id="c-user-6">เติ๊ด</span>
+                    <span class="chat-time">2/9/2569 5:14 PM</span>
+                    <p class="chat-msg" id="c-msg-6">"code 30%"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Roadmap Section -->
+        <section class="card">
+            <h2 id="txt-roadmap-title">สถานะปัจจุบันและก้าวต่อไป (Roadmap) 🚀</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4 id="txt-time-1-title">29 กรกฎาคม 2569</h4>
+                        <p id="txt-time-1">ก่อตั้ง Nova Team ร่วมกันโดยแกนหลัก 4 คน</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4 id="txt-time-2-title">28 ส.ค. - 2 ก.ย. 2569</h4>
+                        <p id="txt-time-2">ยกเลิกโปรเจกต์ Grow & Guard หลังเจอเกมคู่แข่งเปิดตัว และเปลี่ยนทิศทางใหม่ทั้งหมด</p>
+                    </div>
+                </div>
+                <div class="timeline-item active">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4 id="txt-time-3-title">ปัจจุบัน (New Concept Development)</h4>
+                        <p id="txt-time-3">ซุ่มวางแผนเกมแนว "รวมร่างสัตว์ผสมส่วนหัว/ตัว/ขา เพื่อเอาไปต่อสู้" พร้อมจัดสรรสัดส่วนงาน Code (AI/Human)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Script สลับภาษาแบบครอบคลุม 100% -->
+    <script>
+        const translations = {
+            th: {
+                studioBadge: "ROBLOX GAME DEV STUDIO",
+                subtitle: "ทีมพัฒนาเกมบน Roblox สัญชาติไทย (ก่อตั้ง 29 ก.ค. 2569)",
+                desc: "มุ่งมั่นสร้างสรรค์เกมเล่นฟรี (Free-to-Play) บนแพลตฟอร์ม Roblox ให้เข้าถึงผู้เล่นวงกว้าง ต่อยอดความสนุกอย่างต่อเนื่อง และสร้างรายได้ยั่งยืนผ่าน Gamepass / Dev Products 👥",
+                membersTitle: "โครงสร้างสมาชิกในทีม (คลิกดู Skill)",
+                roleLabel: "หน้าที่:",
+                
+                // Names & Roles
+                name1: "เติ๊ด", role1: "Leader & Scripter", m1Desc: "เขียนสคริปต์ระบบหลักของเกมและควบคุมทิศทางทีม",
+                name2: "ทัน", role2: "Animator", m2Desc: "ทำท่าทางและภาพเคลื่อนไหวของตัวละคร/มอนสเตอร์",
+                name3: "เบน", role3: "3D Modeler", m3Desc: "ออกแบบและขึ้นรูปสิ่งของ/ฉากสามมิติลง Roblox",
+                name4: "แก้ว 🎯", role4: "UI / Artist", m4Desc: "วาดภาพประกอบ ไอคอนเกม และออกแบบหน้าตา UI",
+
+                // Archive Section
+                archiveBadge: "CANCELED CONCEPT",
+                archiveTitle: "โปรเจกต์เดิม: Grow & Guard 🌾🐮",
+                archiveIntro: "แนวคิดเกมปลูกผัก-ขายผลผลิตรูปแบบใหม่ที่มีระบบนิเวศสมจริง แต่ต้องยกเลิกไปเพราะโดนผู้พัฒนาอื่นเปิดตัวเกมแนวเดียวกันตัดหน้าไปก่อน!",
+                feat1Title: "🌱 สายพานเมล็ดพันธุ์กลางแมพ",
+                feat1Desc: "ต้องแย่งชิงเมล็ดพันธุ์จากสายพานกลางเมืองเอามาปลูกที่สวน และคอยระวังเพื่อนบ้านแอบขโมยผักหรือโดนแมลงกินจนราคาตก!",
+                feat2Title: "💧 ระบบปลูกและเน่าเสียสมจริง",
+                feat2Desc: "ผักโตไวกว่าผลไม้ ต้องคอยรดน้ำใส่ปุ๋ย ถ้าปล่อยเน่าจะตายแล้วดรอปเมล็ดให้เก็บไปปลูกใหม่แบบโลกจริง",
+                feat3Title: "🐔 ปศุสัตว์ & ตลาดค้าขาย",
+                feat3Desc: "เลี้ยงไก่เก็บไข่ทำปุ๋ย มีโหมดแปรรูปพืชกลายพันธุ์ และมีแมพโซนค้าขายพิเศษที่ตั้งราคาขายเองได้ตั้งแต่ 0-infinity",
+
+                // Chat Section
+                chatTitle: "บันทึกการประชุมดราม่าเปลี่ยนแนวเกม 💬",
+                chatSub: "จุดเปลี่ยนสำคัญเมื่อพบว่ามีคนทำโปรเจกต์แนว Grow & Guard ปล่อยเล่นแล้ว จึงเกิดการประชุมด่วน:",
+                cUser1: "เติ๊ด", cMsg1: "\"เปลี่ยนๆ เอาไม่เอา\"",
+                cUser2: "เบน", cMsg2: "\"เอา\"",
+                cUser3: "ทัน", cMsg3: "\"เกมรวมร่างสัตว์เอาไปต่อสู้กัน จะมีส่วนหัวส่วนตัวส่วนขา\"",
+                cUser4: "เติ๊ด", cMsg4: "\"Bh code ai 70%\"",
+                cUser5: "แก้ว", cMsg5: "\"human\"",
+                cUser6: "เติ๊ด", cMsg6: "\"code 30%\"",
+
+                // Timeline
+                roadmapTitle: "สถานะปัจจุบันและก้าวต่อไป (Roadmap) 🚀",
+                time1Title: "29 กรกฎาคม 2569", time1: "ก่อตั้ง Nova Team ร่วมกันโดยแกนหลัก 4 คน",
+                time2Title: "28 ส.ค. - 2 ก.ย. 2569", time2: "ยกเลิกโปรเจกต์ Grow & Guard หลังเจอเกมคู่แข่งเปิดตัว และเปลี่ยนทิศทางใหม่ทั้งหมด",
+                time3Title: "ปัจจุบัน (New Concept Development)", time3: "ซุ่มวางแผนเกมแนว \"รวมร่างสัตว์ผสมส่วนหัว/ตัว/ขา เพื่อเอาไปต่อสู้\" พร้อมจัดสรรสัดส่วนงาน Code (AI/Human)"
+            },
+            en: {
+                studioBadge: "ROBLOX GAME DEV STUDIO",
+                subtitle: "Thai Roblox Game Development Team (Est. 29 July 2026)",
+                desc: "Dedicated to creating engaging Free-to-Play games on Roblox for a wide audience, building continuous fun and sustainable revenue via Gamepasses & Dev Products 👥",
+                membersTitle: "Team Structure (Click to view Skills)",
+                roleLabel: "Role:",
+
+                // Names & Roles
+                name1: "Teed", role1: "Leader & Scripter", m1Desc: "Main gameplay scripting and team direction control.",
+                name2: "Tan", role2: "Animator", m2Desc: "Character & monster animations and movement physics.",
+                name3: "Ben", role3: "3D Modeler", m3Desc: "3D modeling, asset creation, and Roblox map building.",
+                name4: "Kaeo 🎯", role4: "UI / Artist", m4Desc: "Game icons, illustrations, thumbnails, and UI design.",
+
+                // Archive Section
+                archiveBadge: "CANCELED CONCEPT",
+                archiveTitle: "Canceled Project: Grow & Guard 🌾🐮",
+                archiveIntro: "A realistic farming ecosystem concept, canceled after another developer released a similar game first!",
+                feat1Title: "🌱 Center Map Seed Conveyor",
+                feat1Desc: "Grab seeds from a central conveyor belt, plant them, and guard your crops from thieves or pest infestation!",
+                feat2Title: "💧 Realistic Growth & Rot System",
+                feat2Desc: "Veggies grow faster than fruits. Water & fertilize them! Rotten crops drop seeds to replant like real life.",
+                feat3Title: "🐔 Livestock & Free Market",
+                feat3Desc: "Raise chickens for eggs & fertilizer, mutate crops, and trade items with custom pricing from 0 to infinity.",
+
+                // Chat Section
+                chatTitle: "Game Pivot Emergency Meeting Logs 💬",
+                chatSub: "The turning point when another team launched a similar Grow & Guard game:",
+                cUser1: "Teed", cMsg1: "\"Change it, scrap it.\"",
+                cUser2: "Ben", cMsg2: "\"Agreed.\"",
+                cUser3: "Tan", cMsg3: "\"Animal fusion combat game combining heads, bodies, and legs.\"",
+                cUser4: "Teed", cMsg4: "\"Behavior Code AI 70%\"",
+                cUser5: "Kaeo", cMsg5: "\"Human\"",
+                cUser6: "Teed", cMsg6: "\"Code 30%\"",
+
+                // Timeline
+                roadmapTitle: "Current Status & Roadmap 🚀",
+                time1Title: "29 July 2026", time1: "Nova Team officially founded by 4 core members.",
+                time2Title: "28 Aug - 2 Sep 2026", time2: "Canceled Grow & Guard project due to competitor release, pivoting to a new concept.",
+                time3Title: "Present (New Concept Development)", time3: "Brainstorming 'Animal Fusion Battle' game (Head/Body/Legs) and allocating AI vs Human coding work."
+            }
+        };
+
+        function switchLang(lang) {
+            document.getElementById('txt-studio-badge').innerText = translations[lang].studioBadge;
+            document.getElementById('txt-subtitle').innerText = translations[lang].subtitle;
+            document.getElementById('txt-desc').innerText = translations[lang].desc;
+            document.getElementById('txt-members-title').innerText = translations[lang].membersTitle;
+            
+            for(let i=1; i<=4; i++) {
+                document.getElementById(`txt-role-label-${i}`).innerText = translations[lang].roleLabel;
+                document.getElementById(`name-${i}`).innerText = translations[lang][`name${i}`];
+                document.getElementById(`tag-role-${i}`).innerText = translations[lang][`role${i}`];
+                document.getElementById(`txt-member-${i}-desc`).innerText = translations[lang][`m${i}Desc`];
+            }
+
+            document.getElementById('txt-archive-badge').innerText = translations[lang].archiveBadge;
+            document.getElementById('txt-archive-title').innerText = translations[lang].archiveTitle;
+            document.getElementById('txt-archive-intro').innerText = translations[lang].archiveIntro;
+            document.getElementById('txt-feat-1-title').innerText = translations[lang].feat1Title;
+            document.getElementById('txt-feat-1-desc').innerText = translations[lang].feat1Desc;
+            document.getElementById('txt-feat-2-title').innerText = translations[lang].feat2Title;
+            document.getElementById('txt-feat-2-desc').innerText = translations[lang].feat2Desc;
+            document.getElementById('txt-feat-3-title').innerText = translations[lang].feat3Title;
+            document.getElementById('txt-feat-3-desc').innerText = translations[lang].feat3Desc;
+
+            document.getElementById('txt-chat-title').innerText = translations[lang].chatTitle;
+            document.getElementById('txt-chat-sub').innerText = translations[lang].chatSub;
+            
+            for(let i=1; i<=6; i++) {
+                document.getElementById(`c-user-${i}`).innerText = translations[lang][`cUser${i}`];
+                document.getElementById(`c-msg-${i}`).innerText = translations[lang][`cMsg${i}`];
+            }
+
+            document.getElementById('txt-roadmap-title').innerText = translations[lang].roadmapTitle;
+            document.getElementById('txt-time-1-title').innerText = translations[lang].time1Title;
+            document.getElementById('txt-time-1').innerText = translations[lang].time1;
+            document.getElementById('txt-time-2-title').innerText = translations[lang].time2Title;
+            document.getElementById('txt-time-2').innerText = translations[lang].time2;
+            document.getElementById('txt-time-3-title').innerText = translations[lang].time3Title;
+            document.getElementById('txt-time-3').innerText = translations[lang].time3;
+
+            // Button active state
+            if(lang === 'th') {
+                document.getElementById('btn-th').classList.add('active');
+                document.getElementById('btn-en').classList.remove('active');
+            } else {
+                document.getElementById('btn-en').classList.add('active');
+                document.getElementById('btn-th').classList.remove('active');
+            }
+        }
+
+        function toggleSkill(id) {
+            const skillBox = document.getElementById(id);
+            skillBox.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

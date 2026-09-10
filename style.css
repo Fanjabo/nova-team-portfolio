@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #0b0d14;
+    color: #e2e8f0;
+    line-height: 1.6;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 850px;
+    width: 100%;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(168, 85, 247, 0.2);
+    color: #a855f7;
+    border: 1px solid #a855f7;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+}
+
+.subtitle {
+    color: #38bdf8;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #a855f7, transparent);
+    margin: 20px 0;
+}
+
+.desc {
+    color: #94a3b8;
+    font-size: 1rem;
+}
+
+/* Card Styling */
+.card {
+    background: #131722;
+    border: 1px solid #232a3b;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #f43f5e;
+    margin-bottom: 20px;
+    border-left: 4px solid #f43f5e;
+    padding-left: 10px;
+}
+
+/* Member Cards Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+}
+
+.member-card {
+    background: #1c2230;
+    border: 1px solid #2e374d;
+    padding: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
+}
+
+.member-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.member-header h3 {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.role-badge {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.leader { background: #8b5cf6; color: #fff; }
+.anim { background: #06b6d4; color: #fff; }
+.model { background: #f59e0b; color: #fff; }
+.art { background: #ec4899; color: #fff; }
+
+.role-desc {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+.sub-text {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 4px;
+}
+
+.skill-box {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed #334155;
+    font-size: 0.85rem;
+    color: #38bdf8;
+    animation: fadeIn 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Timeline Component */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid #334155;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -26px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #64748b;
+}
+
+.timeline-item.active .timeline-dot {
+    background: #a855f7;
+    box-shadow: 0 0 10px #a855f7;
+}
+
+.timeline-content h4 {
+    color: #f1f5f9;
+    font-size: 1rem;
+}
+
+.timeline-content p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ตกแต่งส่วน Cancel Concept */
+.archived-card {
+    border: 1px dashed #f43f5e !important;
+    position: relative;
+    background: #18121e !important;
+}
+
+.archive-tag {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #f43f5e;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+.concept-intro {
+    color: #fda4af;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.concept-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.feature-item {
+    background: #231829;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 3px solid #f43f5e;
+}
+
+.feature-item h4 {
+    color: #fecdd3;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.feature-item p {
+    color: #cbd5e1;
+    font-size: 0.85rem;
+}
+
+/* ตกแต่งส่วน Chat Logs */
+.chat-logs {
+    background: #090c10;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-item {
+    background: #161b22;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.chat-user {
+    font-weight: 600;
+    color: #38bdf8;
+    margin-right: 8px;
+}
+
+.chat-time {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.chat-msg {
+    margin-top: 2px;
+    color: #e5e7eb;
+}
+
+.text-red { color: #f87171 !important; }
+.text-green { color: #4ade80 !important; }
+
+.highlight-idea {
+    border: 1px solid #22c55e;
+    background: #052e16;
+}
+
+/* Language Switcher Button */
+.lang-switch {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.lang-btn:hover {
+    color: #38bdf8;
+}
+
+.lang-btn.active {
+    color: #a855f7;
+    border-bottom: 2px solid #a855f7;
+}
+
+.divider {
+    color: #334155;
+    font-size: 0.8rem;
+}
